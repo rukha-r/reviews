@@ -1,0 +1,58 @@
+$main-color: #4CAAE4;
+$quote-color: #fff;
+
+* {
+	font-family: Arial;
+	padding: 0;
+	margin: 0;
+}
+.main-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.review-card {
+	background-color: white;
+	border-radius: 10px;
+	padding: 40px;
+	margin: 50px;
+	width: 500px;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.3); 
+	.quote {
+		background-color: $main-color;
+		width: 15px;
+		height: 15px;
+		padding: 10px;
+		color: $quote-color;
+		border-radius: 50%;
+		position: absolute;
+		left: 1;
+	}
+	.image {
+		width: 130px;
+		height: 130px;
+		border-radius: 50%;
+		box-shadow: 7px -2px $main-color;
+	}
+	.name {
+		opacity: 0.6;
+	}
+	.job {
+		opacity: 0.8;
+		color: $main-color;
+	}
+	.text {
+		opacity: 0.5;
+		word-spacing: 2px;
+	}
+	.prev, .next  {
+		color: $main-color;
+		padding: 15px;
+		cursor: pointer;
+		opacity: 0.5;
+		&:hover {
+			opacity: 1;
+		};
+	}
+}
